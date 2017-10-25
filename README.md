@@ -1,2 +1,14 @@
-# frontend
-Frontend of mpa
+# Frontend
+Frontend repo for the missing persons project 
+
+
+## How it works
+- Assign a task to yourself from the Trello board
+- Move the card to the `in-progress` list 
+- create a branch for the feature, 
+- complete test and pull to the master branch
+
+
+
+## License
+MIT License
