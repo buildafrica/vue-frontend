@@ -2,7 +2,7 @@
 Frontend repo for the missing persons project 
 
 ## Frameworks
-- Bootstrap v4.0.0-alpha.6
+- Bootstrap v4.0.0-beta
 - jQuery v3.2.1
 
 
