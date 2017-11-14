@@ -5,6 +5,15 @@ Frontend repo for the missing persons project
 - Bootstrap v4-alpha [here][1]
 - jQuery v3.2.1 [here][2]
 
+### Folder structure
+Your folder structure should take this shape and namings, after you've downloaded them:
+- js/
+    - bootstrap-v4.0.0-alpha.6.min.js
+    - jquery-v3.2.1.min.js
+    - tether-v1.4.0.min.js
+- css/
+    - bootstrap4.0.0-alpha.6/bootstrap.min.css
+
 ### Notes to frameworks
 - Download only the uncompressed or minified versions of jquery
 
