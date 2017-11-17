@@ -1,8 +1,8 @@
-body {
-	overflow-x: hidden;
-	font-family: "Graphik", Verdana, sans-serif
-}
-
+/* 
+===========================================================================
+	Generics 
+===========================================================================
+*/
 /*
 	Fonts
 */
@@ -37,6 +37,12 @@ body {
 	text-rendering: optimizeLegibility;
   }
 
+/*
+  	End of Fonts
+*/
+/*
+  	Navigation & Footer
+*/
 .navbar {
 	padding: 0;
 	font-size: 13px;
@@ -104,6 +110,44 @@ a:hover {
 	font-size: 15px;
 	font-weight: bold;
 }
+/*
+	End of Navigation & Footer
+*/
+/*
+	Colors
+*/
+.deep-blue-color {
+	color: rgba(52, 46, 121, 0.9);
+}
+
+.bg-deep-blue-color {
+	background-color: rgba(52, 46, 121, 0.9);
+}
+
+.blue-color {
+	color: rgb(23, 97, 158);
+}
+
+.bg-deep-blue-color {
+	background-color: rgb(23, 97, 158);
+}
+
+/*
+	End of Colors
+*/
+
+
+/*
+===========================================================================
+	End of Generics
+===========================================================================
+*/
+
+/*
+===========================================================================
+	Index page specifics
+===========================================================================
+*/
 
 .heading > .row:first-child {
 	background-image: url(../images/header.png);
@@ -136,3 +180,9 @@ a:hover {
 .v-gutter [class*="col-"] {
 	padding: 5px;
 }
+
+/*
+===========================================================================
+	End of Index page specifics
+===========================================================================
+*/
