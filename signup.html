@@ -10,12 +10,13 @@
     
 
         <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="css/bootstrap4.0.0-alpha.6/bootstrap.min.css">
+        <link href="css/bootstrap4.0.0-alpha.6/bootstrap.min.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="css/main.css">
+        <link href="css/main.css" rel="stylesheet" >
 
     </head>
     <body>
+
 		<!-- Body code here -->
 		<nav class="navbar navbar-toggleable-sm navbar-light">
 			<a class="navbar-brand" href="#">Missing<br /> persons</a>
@@ -42,98 +43,65 @@
 					</li>
 				</ul>
 			</div>
-		</nav>
-		
-		<!-- Main page -->
-		<div class="container-fluid heading">
-			<!-- Big header -->
-			<div class="row">
-			</div>
-			<div class="form-group row justify-content-center">
-				<div class="col-lg-5 col-md-6 col-sm-8 col-10">
-					<input class="form-control" type="text" id="quicksearch" placeholder="type to search for a person" name="quicksearch">
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-1 col-md-1 col-sm-2 col-4">
-					<button type="submit" class="btn btn-mpa" data-bind="quicksearch">Search</button>	
-				</div>
-			</div>
-		</div>
+        </nav>
+        
+        <!-- Main page -->
+        <div class="container mt-5">
+            <div class="row header-signup">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="row justify-content-center p-4">
+                        <h4 class="deep-blue-color heading-signup-topic">CREATE ACCOUNT</h4>
+                    </div>
+                </div>
+                <div class="col-lg-12 mt-2">
+                    <div class="row justify-content-center pb-0 deep-blue-color">
+                        <div class="col-2"><h6 class="ml-5 tab-signup">Civilian</h6></div>
+                        <div class="col-2"><h6 class="ml-2 tab-signup transparent">Law Enforcement</h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<div class="container mt-4">
-			<div class="row">
-				<div class="col-lg-12">
-					<p class="font-weight-bold">NEWEST CASES (Last 3 days)</p>
-				</div>
-				<div class="col-lg-3">
-					<img src="images/lady.jpg" width=250 height=200 >
-				</div>
-				<div class="col-lg-3">
-					<img src="images/guy.jpg" width=250 height=200>
-				</div>
-				<div class="col-lg-3">
-					<img src="images/lady.jpg" width=250 height=200>
-				</div>
-				<div class="col-lg-3">
-					<img src="images/guy.jpg" width=250 height=200>
-				</div>
-				<div class="col-lg-2 offset-md-10">
-					<a href="#"><button type="submit" class="btn btn-mpa btn-smaller">See More</button></a>
-				</div>
-			</div>
-			<div class="row mt-3 v-gutter">
-				<div class="col-lg-12">
-					<p class="font-weight-bold">ARCHIVES</p>
-				</div>
-				<div class="col-lg-3">
-					<img src="images/lady.jpg" width=250 height=200 >
-				</div>
-				<div class="col-lg-3">
-					<img src="images/guy.jpg" width=250 height=200>
-				</div>
-				<div class="col-lg-3">
-					<img src="images/lady.jpg" width=250 height=200>
-				</div>
-				<div class="col-lg-3">
-					<img src="images/guy.jpg" width=250 height=200>
-				</div>
-				<div class="col-lg-3">
-					<img src="images/lady.jpg" width=250 height=200 >
-				</div>
-				<div class="col-lg-3">
-					<img src="images/guy.jpg" width=250 height=200>
-				</div>
-				<div class="col-lg-3">
-					<img src="images/lady.jpg" width=250 height=200>
-				</div>
-				<div class="col-lg-3">
-					<img src="images/guy.jpg" width=250 height=200>
-				</div>
-				<div class="col-lg-2 offset-md-10">
-					<a href="#"><button type="submit" class="btn btn-mpa btn-smaller">View All</button></a>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<p class="font-weight-bold">NEW HERE ? </p>
-				</div>
-				<div class="col-lg-4">
-					<img src="images/Vector.png" >
-					<p>Who We Are</p>
-				</div>
-				<div class="col-lg-4">
-					<img src="images/vector2.png">
-					<p>Report A Sighting</p>
-				</div>
-				<div class="col-lg-4">
-					<img src="images/vector3.jpg">
-					<p>Donate or Support Us</p>
-				</div>
-			</div>
-		</div>
+        <div class="container mt-3 mb-4">
+            <div class="row p-2 body-signup">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="form-group row justify-content-center">
+                        <div class="col-10">
+                            <input class="form-control" type="text" placeholder="Fullname" name="fullname" id="fullname-input">
+                        </div>                    
+                    </div> 
+                    <div class="form-group row justify-content-center">
+                        <div class="col-5">
+                            <input class="form-control" type="text" placeholder="Username" name="fullname" id="fullname-input">
+                        </div>
+                        <div class="col-5">
+                            <input class="form-control" type="email" placeholder="Email" name="fullname" id="fullname-input">
+                        </div>                 
+                    </div> 
+                    <div class="form-group row justify-content-center">
+                        <div class="col-5">
+                            <input class="form-control" type="tel" placeholder="Phone number" name="fullname" id="fullname-input">
+                        </div>
+                        <div class="col-5">
+                            <input class="form-control" type="password" placeholder="Password" name="fullname" id="fullname-input">
+                        </div>                 
+                    </div> 
+                    <div class="form-group row justify-content-center">
+                        <div class="col-5">
+                            <input type="checkbox" name="terms" id="terms-input">
+                            <span>By submitting this form, you agree to our Terms of service and Privacy policy</span>
+                        </div>
+                        <div class="col-5">
+                            <button type="submit" class="btn btn-mpa btn-mpa-signup" id="btn_signup">Register</button>
+                        </div>                 
+                    </div> 
+                </div>
+                
+            </div>
+            
+        </div>
 
-		<footer>
+        <footer>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3 col-md-3 col-sm-4 col-6">
@@ -185,6 +153,7 @@
 		<script src="js/bootstrap-v4.0.0-alpha.6.min.js"></script>
 
         <script src="js/main.js"></script>
+
 
     </body>
 </html>
