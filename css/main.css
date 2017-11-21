@@ -16,7 +16,7 @@
 	/* Legacy iOS */
 	text-rendering: optimizeLegibility;
   }
-  @font-face {
+@font-face {
 	font-family: 'Graphik';
 	font-style: normal;
 	font-weight: 300;
@@ -26,7 +26,7 @@
 	/* Legacy iOS */
 	text-rendering: optimizeLegibility;
   }
-  @font-face {
+ @font-face {
 	font-family: 'Graphik';
 	font-style: normal;
 	font-weight: bold;
@@ -36,6 +36,34 @@
 	/* Legacy iOS */
 	text-rendering: optimizeLegibility;
   }
+
+@font-face {
+	font-family: 'Chronica';
+	font-style: normal;
+	font-weight: 300;
+	src: url("../fonts/chronica/ChronicaPro-Light.otf");
+	/* Legacy iOS */
+	text-rendering: optimizeLegibility;
+  }
+
+@font-face {
+	font-family: 'Chronica';
+	font-style: normal;
+	font-weight: bold;
+	src: url("../fonts/chronica/ChronicaPro-Medium.otf");
+	/* Legacy iOS */
+	text-rendering: optimizeLegibility;
+  }
+
+@font-face {
+	font-family: 'Chronica';
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/chronica/ChronicaPro-Regular.otf");
+	/* Legacy iOS */
+	text-rendering: optimizeLegibility;
+  }
+
 
 /*
   	End of Fonts
@@ -184,5 +212,62 @@ a:hover {
 /*
 ===========================================================================
 	End of Index page specifics
+===========================================================================
+*/
+
+/*
+===========================================================================
+	Sign up page specifics
+===========================================================================
+*/
+
+.header-signup {
+	font-family: "Chronica";
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.header-signup .tab-signup {
+	font-weight: bold;
+	transition: all 0.15s fadeIn;
+}
+
+.header-signup .tab-signup:hover {
+	cursor: pointer;
+}
+
+.transparent {
+	opacity: 0.5;
+}
+
+.btn-mpa-signup {
+	width: 100%;
+}
+
+.body-signup {
+	font-family: 'Chronica'
+}
+
+.body-signup input, button {
+	font-family: 'Chronica';
+}
+
+/* .body-signup input[type=checkbox] {
+
+} */
+
+input {
+	border: 2px solid	rgba(0,0,0, .15) !important;
+	border-radius: 0 !important;
+}
+
+.body-signup div.form-group:last-child span {
+	font-size: 12.5px;
+	color: red;
+}
+
+
+/*
+===========================================================================
+	End of Sign up page specifics
 ===========================================================================
 */
