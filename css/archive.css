@@ -185,6 +185,26 @@ body, input, button {
 	box-shadow: 7px 13px 37px -1px rgba(0,0,0,0.46);
 }
 
-.archive-search button {
+.card-like {
+	border-radius: 3px;
+	padding: 2%;
+	-webkit-box-shadow: 7px 13px 37px -1px rgba(0,0,0,0.46);
+	-moz-box-shadow: 7px 13px 37px -1px rgba(0,0,0,0.46);
+	box-shadow: 7px 13px 37px -1px rgba(0,0,0,0.46);
+}
 
+.card-body {
+	padding: 2%;
+}
+
+.row {
+	margin-top: 2%;
+}
+
+.card-text {
+	font-size: 70%;
+}
+
+.white-fg {
+	color: #fff;
 }
