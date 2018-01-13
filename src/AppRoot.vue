@@ -5,20 +5,17 @@
     <BaseFooter/>
 	</div>
 </template>
-
 <script>
 /* eslint-disable */
 import $ from "jquery";
 import axios from "axios";
-import socket from "@/socket";
 import { mapGetters } from "vuex";
 import { paceConf } from "@/utils";
 import Pace from "@/assets/libs/PACE/pace.min.js";
 import BaseHeader from "@/ui-kits/BaseHeader";
 import BaseFooter from "@/ui-kits/BaseFooter";
-// import PageLoader from "@/ui-kits/PageLoader";
-// axios.interceptors.request.use(paceConf.request);
-// axios.interceptors.response.use(paceConf.response);
+axios.interceptors.request.use(paceConf.request);
+axios.interceptors.response.use(paceConf.response);
 window.jQuery = $;
 require("bootstrap");
 
@@ -57,5 +54,11 @@ export default {
 .md-whiteframe-z1 {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #422696;
+    border-color: #422696;
 }
 </style>

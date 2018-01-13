@@ -9,10 +9,11 @@
     </div>
     <div class="header-link-holder hidden-xs">
       <router-link :to="{name: 'home'}" class="header-link">Home</router-link>
-      <a class="header-link" href="#">Archive</a>
-      <a class="header-link" href="#">Report a Sighting</a>
-      <a class="header-link" href="#">Report a case</a>
-      <a class="header-link" href="#">Sign Up</a>
+      <router-link :to="{name: 'archives'}" class="header-link">Archives</router-link>
+      <router-link :to="{name: 'report-sighting'}" class="header-link" >Report a Sighting</router-link>
+      <router-link :to="{name: 'report-case'}" class="header-link">Report a case</router-link>
+      <router-link :to="{name: 'signup'}" class="header-link">Sign Up</router-link>
+      <router-link :to="{name: 'login'}" class="header-link">Login</router-link>
     </div>
     <div class="mobile-menu-holder visible-xs">
       <div class="mobile-menu-button"><span class="ion-android-menu"></span>&nbsp;MENU</div>
@@ -43,7 +44,7 @@
     right: 0;
     left: 0;
     background: #422597;
-    z-index: 9999;
+    z-index: 100;
     display: flex;
     flex-direction: row;
     justify-content: center;
