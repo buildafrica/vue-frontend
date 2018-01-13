@@ -1,0 +1,21 @@
+.vue-toast-manager_container {
+  position: fixed;
+  width: 100%;
+
+  &.__top {
+    top: 10px;
+  }
+  &.__bottom {
+    bottom: 10px;
+  }
+  &.__left {
+    left: 10px;
+  }
+  &.__right {
+    right: 10px;
+  }
+}
+
+.vue-toast-manager_toasts {
+  position: relative;
+}

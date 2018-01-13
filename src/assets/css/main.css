@@ -1,0 +1,161 @@
+/* 
+===========================================================================
+	Generics 
+===========================================================================
+*/
+/*
+	Fonts
+*/
+@font-face {
+	font-family: 'Graphik';
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/graphik/Graphik-Regular.woff");
+	/* IE9 Compat Modes */
+	/* src: url("../fonts/graphik/Graphik-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/graphik/Graphik-Regular.woff") format("woff"), url("../fonts/graphik/Graphik-Regular.ttf") format("truetype"); */
+	/* Legacy iOS */
+	text-rendering: optimizeLegibility;
+  }
+@font-face {
+	font-family: 'Graphik';
+	font-style: normal;
+	font-weight: 300;
+	src: url("../fonts/graphik/Graphik-Light-Web.eot");
+	/* IE9 Compat Modes */
+	/* src: url("../fonts/graphik/Graphik-Light-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/graphik/Graphik-Light.woff") format("woff"), Modern Browsers url("../fonts/graphik/Graphik-Light.ttf") format("truetype"); */
+	/* Legacy iOS */
+	text-rendering: optimizeLegibility;
+  }
+ @font-face {
+	font-family: 'Graphik';
+	font-style: normal;
+	font-weight: bold;
+	src: url("../fonts/graphik/Graphik-Medium.woff");
+	/* IE9 Compat Modes */
+	/* src: url("../fonts/graphik/Graphik-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/graphik/Graphik-Medium.woff") format("woff"), url("../fonts/graphik/Graphik-Medium.ttf") format("truetype"); */
+	/* Legacy iOS */
+	text-rendering: optimizeLegibility;
+  }
+
+@font-face {
+	font-family: 'Chronica';
+	font-style: normal;
+	font-weight: 300;
+	src: url("../fonts/chronica/ChronicaPro-Light.otf");
+	/* Legacy iOS */
+	text-rendering: optimizeLegibility;
+  }
+
+@font-face {
+	font-family: 'Chronica';
+	font-style: normal;
+	font-weight: bold;
+	src: url("../fonts/chronica/ChronicaPro-Medium.otf");
+	/* Legacy iOS */
+	text-rendering: optimizeLegibility;
+  }
+
+@font-face { 
+	font-family: 'Chronica';
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/chronica/ChronicaPro-Regular.otf");
+	/* Legacy iOS */
+	text-rendering: optimizeLegibility;
+  }
+
+
+/*
+  	End of Fonts
+*/
+
+footer {
+	background-color: rgb(23, 97, 158);
+	color: white;
+	font-size: 13px;
+	font-weight: thin;
+}
+
+footer ul {
+	padding-left: 0px;
+}
+
+footer .row {
+	padding: .8%;
+}
+
+footer ul li {
+	list-style-type: none;
+	text-align: left;
+}
+
+footer ul li a:hover {
+	color: #15293e;
+	text-decoration: none;
+}
+
+footer a{
+	color: white;
+	transition: all 0.15s ease-in-out;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+.footer-list-heading {
+	font-size: 15px;
+	font-weight: bold;
+}
+/*
+	End of Navigation & Footer
+*/
+/*
+	Colors
+*/
+.deep-blue-color {
+	color: rgba(52, 46, 121, 0.9);
+}
+
+.bg-deep-blue-color {
+	background-color: rgba(52, 46, 121, 0.9);
+}
+
+.blue-color {
+	color: rgb(23, 97, 158);
+}
+
+.bg-deep-blue-color {
+	background-color: rgb(23, 97, 158);
+}
+
+/*
+	End of Colors
+*/
+
+
+/*
+===========================================================================
+	End of Generics
+===========================================================================
+*/
+
+/*
+===========================================================================
+	Index page specifics
+===========================================================================
+*/
+
+.heading > .row:first-child {
+	background-image: url(../images/header.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 350px;
+}
+
+
+#content {
+	position: relative;
+	top: 50px;
+}

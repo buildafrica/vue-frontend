@@ -1,35 +1,30 @@
-# Frontend
-Frontend repo for the missing persons project 
+# dcmpa
 
-## Frameworks
-- Bootstrap v4-alpha [here][1]
-- jQuery v3.2.1 [here][2]
+> DevCenter Missing People Archive
 
-### Folder structure
-Your folder structure should take this shape and namings, after you've downloaded them:
-- js/
-    - bootstrap-v4.0.0-alpha.6.min.js
-    - jquery-v3.2.1.min.js
-    - tether-v1.4.0.min.js
-- css/
-    - bootstrap4.0.0-alpha.6/bootstrap.min.css
+## Build Setup
 
-### Notes to frameworks
-- Download only the uncompressed or minified versions of jquery
+``` bash
+# install dependencies
+npm install
 
-## Contributing
-- Fork 
-- Make pull requests into dev branch
+# serve with hot reload at localhost:8098
+npm run dev
 
-## How it works
-- Assign a task to yourself from the Trello board
-- Move the card to the `in-progress` list 
-- create a branch for the feature, 
-- complete test and pull to the master branch
+# build for production with minification
+npm run build
 
+# build for production and view the bundle analyzer report
+npm run build --report
 
-## License
-MIT License
+# run unit tests
+npm run unit
 
-[1]:https://v4-alpha.getbootstrap.com/
-[2]:https://code.jquery.com/jquery/
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
+```
+
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
