@@ -1,0 +1,24 @@
+{
+  "name": "dcmpa",
+  "description": "DevCenter Missing People Archive",
+  "main": "",
+  "authors": [
+    "Justice Nefe <justicenefe@gmail.com"
+  ],
+  "license": "MIT",
+  "keywords": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "animate.css": "^3.5.2",
+    "normalize-css": "^7.0.0",
+    "Photo-Sphere-Viewer": "^3.2.3"
+  }
+}

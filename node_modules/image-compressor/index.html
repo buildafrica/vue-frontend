@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="content-wrap">
+    <h1>Image Compressor</h1>
+    <p class="description">Image compressor is a tool for resizing images exactly without a backend. You can try it below</p>
+    <div>
+        <button type="button" class="btn image-selector">Select Image</button>
+        <input type="file" id="image">
+    </div>
+    <div class="original-img">
+        <div class="column-50 image-with-size">
+            <h2>Image to Compress</h2>
+            <img id="original" src="img/placeholder.png" alt="Original image to compress" title="Original image to compress">
+            <div class="original-size">
+                <span id="origin-width"></span>
+                <span id="origin-height"></span>
+            </div>
+
+        </div>
+        <div class="column-50 settings">
+            <h2>Compressing Settings</h2>
+            <label for="width">Width : </label> <input type="text" id="width">
+            <label for="height">Height : </label> <input type="text" id="height">
+            <div class="filters-wrap">
+                <div class="filters single-filters">
+                    <h3>Filters</h3>
+                    <input type="radio" name="filter" id="none" value="none" checked><label for="none">None</label>
+                    <input type="radio" name="filter" id="grayscale" value="grayscale"><label for="grayscale">Grayscale</label>
+                    <input type="radio" name="filter" id="sepia" value="sepia"><label for="sepia">Sepia</label>
+                    <input type="radio" name="filter" id="threshold" value="sepia"><label for="threshold">Threshold</label>
+                    <input type="number" id="threshold-val" value="127" data-threshold maxlength="3" min="0" max="255" style="display: none">
+                </div>
+
+                <div class="filters post-effects">
+                    <h3>Post Effects</h3>
+                    <input type="checkbox" name="post-effect" id="v-reverse" value="vReverse"><label for="v-reverse">V-reverse</label>
+                    <input type="checkbox" name="post-effect" id="h-reverse" value="hReverse"><label for="h-reverse">H-reverse</label>
+                </div>
+
+                <div class="filters quality">
+                    <h3>High speed - low quality. Low speed - high quality</h3>
+                    <label for="speed">Quality : </label>
+                    <select name="speed" id="speed">
+                        <option value="low" selected>High</option>
+                        <option value="high">Low</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <button type="button" class="btn" id="compress"> Compress </button>
+
+    <div class="compressed-img">
+        <h2>Compressed Image</h2>
+        <img src="img/placeholder.png" alt="Compressed image" title="Compressed image" id="result">
+    </div>
+
+</div>
+
+<script src="image-compressor.js"></script>
+<script src="index.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-103168679-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

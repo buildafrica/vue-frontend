@@ -1,0 +1,85 @@
+h1, .content-wrap{
+    text-align: center;
+    margin: 10px 0;
+    padding:10px;
+}
+
+.content-wrap{
+    width:1080px;
+    margin:auto;
+}
+.original-img{
+    margin:10px 0;
+    height: 500px;
+}
+
+.description{
+    font-size: 18px;
+}
+
+#original{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.btn,
+.btn:active,
+.btn:focus{
+
+    background: #41b3bd;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+
+}
+.column-50{
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    width: calc(50% - 40px);
+    border: 1px solid #f0eb80;
+    height: 100%;
+}
+.image-with-size{
+    /*background: #f0eb80;*/
+}
+.settings{
+    /*background: #f9f5a1;*/
+}
+.settings input[type="text"]{
+    display: block;
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin: 10px 5px;
+    border-radius: 3px;
+    border: 1px solid #53aea2;
+}
+.settings .grayscale-wrap{
+
+    margin: 10px 0;
+
+}
+
+.compressed-img{
+    border: 1px solid #f0eb80;
+    margin-top: 10px;
+
+}
+.compressed-img img{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.filters{
+    padding: 10px 0;
+    border-top: 1px solid #CDCDCD;
+}
+

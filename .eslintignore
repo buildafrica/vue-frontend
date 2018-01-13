@@ -1,0 +1,7 @@
+src/assets/libs/jquery/dist/*.js
+src/assets/libs/bootstrap/dist/js/*.js
+src/ui-kits/**
+src/assets/libs/**
+test/unit/coverage/**
+test/unit/*.js
+test/e2e/*.js
