@@ -16,12 +16,6 @@
   "dependencies": {
     "@xkeshi/image-compressor": "^0.5.2",
     "animate.css": "^3.5.2",
-    "apollo-cache-inmemory": "^1.1.0",
-    "apollo-client": "^1.9.3",
-    "apollo-link": "^1.0.0",
-    "apollo-link-http": "^1.1.0",
-    "apollo-link-ws": "^1.0.0",
-    "apollo-utilities": "^1.0.1",
     "axios": "^0.16.2",
     "bootstrap": "^3.3.7",
     "cropperjs": "^1.1.3",
