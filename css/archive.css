@@ -178,11 +178,19 @@ body, input, button {
 	margin-top: 5%;
 }
 
-.archive-search input {
+.archive-bg {
+	background-color: #f8f8f8;
+}
+
+.item-shadow {
+	-webkit-box-shadow: 0px 0px 80px -29px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 80px -29px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 80px -29px rgba(0,0,0,0.75);
+}
+
+.custom-input-border {
+	border-radius: 1px;
 	border: 0;
-	-webkit-box-shadow: 7px 13px 37px -1px rgba(0,0,0,0.46);
-	-moz-box-shadow: 7px 13px 37px -1px rgba(0,0,0,0.46);
-	box-shadow: 7px 13px 37px -1px rgba(0,0,0,0.46);
 }
 
 .card-like {
@@ -203,8 +211,4 @@ body, input, button {
 
 .card-text {
 	font-size: 70%;
-}
-
-.white-fg {
-	color: #fff;
 }
