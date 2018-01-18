@@ -34,6 +34,7 @@ export default {
 @import "./assets/libs/Ionicons/css/ionicons.css";
 @import "./assets/libs/bootstrap/dist/css/bootstrap.css";
 @import "./assets/css/main.css";  
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 .vue-toast-manager_container.__left {
   z-index: 90 !important;
 }
