@@ -17,7 +17,7 @@
         <link href="css/archive.css" rel="stylesheet" >
 
     </head>
-    <body>
+    <body class="archive-bg">
 
         <!-- Body code here -->
 <!-- Body code here -->
@@ -49,77 +49,90 @@
 		</nav>
 
 		<!-- Main page -->
-		<div class="archive-search d-flex justify-content-center">
+		<div>
+			<form class="form">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-9">
+			    		<input type="text" class="form-control archive-bg" placeholder="Type to search for a person">
+			    	</div>
+					</div>
 
-			<form class="form-inline">
-			  <div class="form-group mx-sm-3 mb-2">
-			    <label for="inputPassword2" class="sr-only">Enter a name</label>
-			    <input type="text" class="form-control form-control" placeholder="Enter a name">
-			  </div>
-			  <button type="submit" class="btn btn-primary mb-2 bg-deep-blue-color">Search</button>
+					<div class="row justify-content-center">
+						<div class="col-md-3">
+							<select class="form-control form-control-sm item-shadow custom-input-border">
+							  <option>Date</option>
+							</select>
+						</div>
+
+						<div class="col-md-3">
+							<select class="form-control form-control-sm item-shadow custom-input-border">
+							  <option>Location</option>
+							</select>
+						</div>
+
+						<div class="col-md-3">
+							<select class="form-control form-control-sm item-shadow custom-input-border">
+							  <option>Sex</option>
+							</select>
+						</div>
+
+					</div>
+					<!-- End of row -->
+
+					<div class="row justify-content-center">
+						<div class="col-md-3">
+							<button type="submit" class="bg-deep-blue-color btn btn-primary item-shadow custom-input-border btn-block">Search</button>
+						</div>
+					</div>
+
+				</div>
 			</form>
 		</div>
 
+<hr>
+		<div class="container col-md-10">
+		  <h5>Sorting Alphabetically</h5>
 
-		<div class="container">
-		  <div class="row">
-		    <div class="col-6">
-		      <h4>Top Results</h4>
-		    </div>
-		    <div class="col-6">
-		      <div class="dropdown float-right">
-					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    Sort by
-					  </button>
-					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					    <a class="dropdown-item" href="#">Region</a>
-					    <a class="dropdown-item" href="#">Age</a>
-					    <a class="dropdown-item" href="#">Last seen</a>
-					  </div>
-					</div>
-		    </div>
-		    <div class="col-12 card-like">
-		    	<div class="row">
-		    		<div class="col-3">
-		    			<div class="card" style="width: 15rem;">
+<input type="range" min="1" max="26" value="1" class="slider" id="myRange">
+
+		    	<div class="row justify-content-between">
+		    		<div class="col-md-3 col-sm-10">
+		    			<div class="card item-shadow custom-input-border" style="width: 15rem;">
 							  <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_160e9d96ead%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_160e9d96ead%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.203125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
 							  <div class="card-body">
-							    <h5 class="card-title">Adekunle Obi Ali</h5>
-							    <p class="card-text">Ade was las seen at #98 Ademola Street on Tuesday, 29/02/2015  .</p>
-							    <a href="#" class="btn btn-sm bg-deep-blue-color white-fg">View profile</a>
+							    <h6 class="card-title">Adekunle Obi Ali</h6>
+							    <p class="card-text">Age: 6 years<br>Missing since: 29/01/2015<br>Missing from: Ogudu, Kosofe<br>Last seen: #98 Ademola Street on 29/02/2015  .</p>
 							  </div>
 							</div>
 		    		</div>
 
-		    		<div class="col-3">
-		    			<div class="card" style="width: 15rem;">
+		    		<div class="col-md-3 col-sm-10">
+		    			<div class="card item-shadow custom-input-border" style="width: 15rem;">
 							  <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_160e9d96ead%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_160e9d96ead%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.203125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
 							  <div class="card-body">
-							    <h5 class="card-title">Adekunle Obi Ali</h5>
-							    <p class="card-text">Ade was las seen at #98 Ademola Street on Tuesday, 29/02/2015  .</p>
-							    <a href="#" class="btn btn-sm bg-deep-blue-color white-fg">View profile</a>
+							    <h6 class="card-title">Adekunle Obi Ali</h6>
+							    <p class="card-text">Age: 6 years<br>Missing since: 29/01/2015<br>Missing from: Ogudu, Kosofe<br>Last seen: #98 Ademola Street on 29/02/2015  .</p>
 							  </div>
 							</div>
 		    		</div>
 
-		    		<div class="col-3">
-		    			<div class="card" style="width: 15rem;">
+		    		<div class="col-md-3 col-sm-10">
+		    			<div class="card item-shadow custom-input-border" style="width: 15rem;">
 							  <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_160e9d96ead%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_160e9d96ead%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.203125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
 							  <div class="card-body">
-							    <h5 class="card-title">Adekunle Obi Ali</h5>
-							    <p class="card-text">Ade was las seen at #98 Ademola Street on Tuesday, 29/02/2015  .</p>
-							    <a href="#" class="btn btn-sm bg-deep-blue-color white-fg">View profile</a>
+							    <h6 class="card-title">Adekunle Obi Ali</h6>
+							    <p class="card-text">Age: 6 years<br>Missing since: 29/01/2015<br>Missing from: Ogudu, Kosofe<br>Last seen: #98 Ademola Street on 29/02/2015  .</p>
 							  </div>
 							</div>
 		    		</div>
 
-		    		<div class="col-3">
-		    			<div class="card" style="width: 15rem;">
+		    		<div class="col-md-3 col-sm-10">
+		    			<div class="card item-shadow custom-input-border" style="width: 15rem;">
 							  <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_160e9d96ead%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_160e9d96ead%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.203125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
 							  <div class="card-body">
-							    <h5 class="card-title">Adekunle Obi Ali</h5>
-							    <p class="card-text">Ade was las seen at #98 Ademola Street on Tuesday, 29/02/2015  .</p>
-							    <a href="#" class="btn btn-sm bg-deep-blue-color white-fg">View profile</a>
+							    <h6 class="card-title">Adekunle Obi Ali</h6>
+							    <p class="card-text">Age: 6 years<br>Missing since: 29/01/2015<br>Missing from: Ogudu, Kosofe<br>Last seen: #98 Ademola Street on 29/02/2015  .</p>
 							  </div>
 							</div>
 		    		</div>
@@ -127,24 +140,70 @@
 		    	</div>
 
 		    	<div class="row">
-		    		<div class="col-3">
-		    			<div class="card" style="width: 15rem;">
+		    		<div class="col-md-3 col-sm-10">
+		    			<div class="card item-shadow custom-input-border" style="width: 15rem;">
 							  <img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_160e9d96ead%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_160e9d96ead%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.203125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image cap">
 							  <div class="card-body">
-							    <h5 class="card-title">Adekunle Obi Ali</h5>
-							    <p class="card-text">Ade was las seen at #98 Ademola Street on Tuesday, 29/02/2015  .</p>
-							    <a href="#" class="btn btn-sm bg-deep-blue-color white-fg">View profile</a>
+							    <h6 class="card-title">Adekunle Obi Ali</h6>
+							    <p class="card-text">Age: 6 years<br>Missing since: 29/01/2015<br>Missing from: Ogudu, Kosofe<br>Last seen: #98 Ademola Street on 29/02/2015  .</p>
 							  </div>
 							</div>
 		    		</div>
 		    	</div>
 
-		    </div>
-		  </div>
+		</div>
+		<hr>
+		<div class="row justify-content-center">
+		    		<div class="col-md-3">
+		    			<button type="submit" class="bg-deep-blue-color btn btn-primary item-shadow custom-input-border btn-block">Load more</button>
+		    		</div>
 		</div>
 
-
-
+<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-4 col-6">
+						<ul>
+							<li class="footer-list-heading">Quick Links</li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#"><li>Legal</a></li>
+							<li><a href="#">Donate</a></li>
+						</ul>
+				 	</div>
+				  	<div class="col-lg-3 col-md-3 col-sm-3 col-6">
+						<ul>
+							<li class="footer-list-heading">Help</li>
+							<li><a href="#">Donate</a></li>
+							<li><a href="#">Report a case</a></li>
+							<li><a href="#">Spread the word</a></li>
+							<li><a href="#">Stay informed</a></li>
+						</ul>
+					</div>
+				  	<div class="col-lg-3 col-md-3 col-sm-3 col-6">
+						<ul>
+							<li class="footer-list-heading">Social</li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Instagram</a></li>
+						</ul>	
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-6">
+						<ul>
+							<li class="footer-list-heading">Social</li>
+							<li>11, Badru Street. Olorunsogo. Abeokuta, Ogun State</li>
+							<li class="font-weight-bold">+2348068940487</li>
+						</ul>	
+					</div>
+				</div>
+				<div class="row justify-content-between">
+				  <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+					<p class="m-0 text-left">Copyright &copy; Missing Persons 2017</p>
+				  </div>
+				</div>
+			  </div>
+		</footer>
 
         <!-- ./ Body code ends here -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
