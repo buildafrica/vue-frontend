@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>MPA</title>
+
+	<!-- Bootstrap & Fontawesome CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+
+	</head>
+<body>
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top font-weight-bold ">
+  		<a class="navbar-brand text-white" href="#">MPA</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+   			<span class="navbar-toggler-icon"></span>
+  		</button>
+
+  		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+     			<li class="nav-item active">
+       				<a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link text-white" href="#">About</a>
+      			</li>
+			    <li class="nav-item">
+			        <a class="nav-link text-white" href="#">Explore</a>
+			    </li>
+			    <li class="nav-item">
+			        <a class="nav-link text-white" href="#">Report a Case</a>
+			    </li>
+			</ul>
+		    <form class="form-inline my-2 my-lg-0">
+		    	<input class="form-control form-control-nav bg-transparent mr-sm-2" type="search" placeholder="Search...">
+			    <button class="btn btn-contribute bg-transparent my-2 my-sm-0 text-white" type="submit">Contribute</button>
+    		</form>
+  		</div>
+	</nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 ">
+          <h1 class="display-4">Help us build a Database<br> of Missing Persons</h1>
+          <p class="lead">collectively we can create a collabotrative platform that can help in<br> the investigation of missing an unidentified persons cases</p>
+          </div>  
+        <div class="col-12 col-md-4 ">
+          <!-- search form -->
+          <form class="search-form">
+            <header class="text-center h3" >Search our Database</header>
+            <!-- nav tab -->
+            <div class="nav-row">
+              <ul class="nav nav-tabs nav-justified">
+                <li class="nav-item">
+                  <a class="nav-link active " data-toggle="tab" href="#male" role="tab">MALE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " data-toggle="tab" href="#female" role="tab">FEMALE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " data-toggle="tab" href="#unknown" role="tab">UNKNOWN</a>
+                </li>
+              </ul>
+            </div>
+            <!-- panel content -->
+            <div class="panel-content">
+              <div class="tab-content">
+
+                <!-- male pane -->
+                  <div class="tab-pane fade in show active" id="male" role="tabpanel">
+                    <div class=" pt-5">
+                      <div class="form-group">
+                        <input type="text" class="form-control bg-transparent search-input" id="formGroupExampleInput" placeholder="Name">
+                      </div>
+                      <!-- dropdown- select -->
+                      <select class="custom-select custom-select-lg mb-3 bg-transparent rounded-0">
+                        <option selected>Location</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <button type="button" class="btn btn-danger btn-lg btn-submit rounded-0">Submit</button>   
+                    </div>
+                  </div>
+
+                  <!-- female pane -->
+                  <div class="tab-pane fade" id="female" role="tabpanel">
+                    <div class="pt-5">
+                      <div class="form-group">
+                        <input type="text" class="form-control bg-transparent search-input " id="formGroupExampleInput" placeholder="Name">
+                      </div>
+                      <!-- dropdown- select -->
+                      <select class="custom-select custom-select-lg mb-3 bg-transparent">
+                        <option selected>Location</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <button type="button" class="btn btn-danger btn-lg btn-submit">Submit</button>   
+                    </div>
+                  </div>
+
+                  <!-- unknown pane -->
+                  <div class="tab-pane fade" id="unknown" role="tabpanel">
+                    <div class="pt-5">
+                      <div class="form-group">
+                        <input type="text" class="form-control bg-transparent search-input" id="formGroupExampleInput" placeholder="Name">
+                      </div>
+                      <!-- dropdown- select -->
+                      <select class="custom-select custom-select-lg mb-3 bg-transparent">
+                        <option selected>Location</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <button type="button" class="btn btn-danger btn-lg btn-submit">Submit</button>   
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </form>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <!-- card section -->
+  <div class=" container-fluid card-container">
+    <div class="row card-deck">
+
+      <div class="col-12 col-md-3">
+        <div class="card">
+          <img class="img-fluid" src="images/guy.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <button type="button" class="btn btn-danger btn-category">NEWEST</button>
+          </div>
+          <div class="card-body">
+            <h5 class="">Adekunle Obi &nbsp;&nbsp;&nbsp;<span>22yrs</span> </h5>
+            <p class=""><strong>Missing since:</strong> <span>12 March 2015</span></p>
+            <p class=""><strong>Last seen:</strong> <span>98 Ademola Street, keju, Ikeja, Lagos.</span></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-12 col-md-3">
+        <div class="card">
+          <img class="img-fluid" src="images/lady.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <button type="button" class="btn btn-danger btn-category">NEWEST</button>
+          </div>
+          <div class="card-body">
+            <h5 class="">Adekunle Obi &nbsp;&nbsp;&nbsp;<span>22yrs</span> </h5>
+            <p class=""><strong>Missing since:</strong> <span>12 March 2015</span></p>
+            <p class=""><strong>Last seen:</strong> <span>98 Ademola Street, keju, Ikeja, Lagos.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <div class="card">
+          <img class="img-fluid" src="images/guy.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <button type="button" class="btn btn-danger btn-category">NEWEST</button>
+          </div>
+          <div class="card-body">
+            <h5 class="">Adekunle Obi &nbsp;&nbsp;&nbsp;<span>22yrs</span> </h5>
+            <p class=""><strong>Missing since:</strong> <span>12 March 2015</span></p>
+            <p class=""><strong>Last seen:</strong> <span>98 Ademola Street, keju, Ikeja, Lagos.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <div class="card">
+          <img class="img-fluid" src="images/lady.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <button type="button" class="btn btn-danger btn-category">NEWEST</button>
+          </div>
+          <div class="card-body">
+            <h5 class="">Adekunle Obi &nbsp;&nbsp;&nbsp;<span>22yrs</span> </h5>
+            <p class=""><strong>Missing since:</strong> <span>12 March 2015</span></p>
+            <p class=""><strong>Last seen:</strong> <span>98 Ademola Street, keju, Ikeja, Lagos.</span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- little note section -->
+  <div class="container-fluid text-center">
+    <p class="display-3 font-weight-bold" >
+      Let's Bring Them Back
+    </p>
+    <p  class="little-note">
+      Some missing people you would have heard of, but many more you won't. For their families, life can feeel like a <br> desperate and unbearable struggle as they wait for days or even years. That's why we are here for missing <br> person's and their families, 24 hours a day, 365 days a year, to provide free and confidential support, help <br> us report a sighting, search our database, crosscheck information, query the database.
+    </p>
+  </div>
+
+  <!-- second card section -->
+  <div class=" container-fluid card-container">
+    <div class="row card-deck">
+
+      <div class="col-12 col-md-3">
+        <div class="card">
+          <img class="img-fluid" src="images/guy.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <button type="button" class="btn btn-danger btn-category">NEWEST</button>
+          </div>
+          <div class="card-body">
+            <h5 class="">Adekunle Obi &nbsp;&nbsp;&nbsp;<span>22yrs</span> </h5>
+            <p class=""><strong>Missing since:</strong> <span>12 March 2015</span></p>
+            <p class=""><strong>Last seen:</strong> <span>98 Ademola Street, keju, Ikeja, Lagos.</span></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-12 col-md-3">
+        <div class="card">
+          <img class="img-fluid" src="images/lady.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <button type="button" class="btn btn-danger btn-category">NEWEST</button>
+          </div>
+          <div class="card-body">
+            <h5 class="">Adekunle Obi &nbsp;&nbsp;&nbsp;<span>22yrs</span> </h5>
+            <p class=""><strong>Missing since:</strong> <span>12 March 2015</span></p>
+            <p class=""><strong>Last seen:</strong> <span>98 Ademola Street, keju, Ikeja, Lagos.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <div class="card">
+          <img class="img-fluid" src="images/guy.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <button type="button" class="btn btn-danger btn-category">NEWEST</button>
+          </div>
+          <div class="card-body">
+            <h5 class="">Adekunle Obi &nbsp;&nbsp;&nbsp;<span>22yrs</span> </h5>
+            <p class=""><strong>Missing since:</strong> <span>12 March 2015</span></p>
+            <p class=""><strong>Last seen:</strong> <span>98 Ademola Street, keju, Ikeja, Lagos.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <div class="card">
+          <img class="img-fluid" src="images/lady.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <button type="button" class="btn btn-danger btn-category">NEWEST</button>
+          </div>
+          <div class="card-body">
+            <h5 class="">Adekunle Obi &nbsp;&nbsp;&nbsp;<span>22yrs</span> </h5>
+            <p class=""><strong>Missing since:</strong> <span>12 March 2015</span></p>
+            <p class=""><strong>Last seen:</strong> <span>98 Ademola Street, keju, Ikeja, Lagos.</span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- third card ssection with black background -->
+  <div class=" container-fluid card-container">
+    <div class="row card-deck text-white">
+
+      <div class="col-12 col-md-3">
+        <div class="card">
+          <img class="img-fluid" src="images/guy.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <button type="button" class="btn btn-danger btn-category">NEWEST</button>
+          </div>
+          <div class="card-body bg-dark">
+            <h5 class="">Adekunle Obi &nbsp;&nbsp;&nbsp;<span>22yrs</span> </h5>
+            <p class=""><strong>Missing since:</strong> <span>12 March 2015</span></p>
+            <p class=""><strong>Last seen:</strong> <span>98 Ademola Street, keju, Ikeja, Lagos.</span></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-12 col-md-3">
+        <div class="card">
+          <img class="img-fluid" src="images/lady.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <button type="button" class="btn btn-danger btn-category">NEWEST</button>
+          </div>
+          <div class="card-body bg-dark">
+            <h5 class="">Adekunle Obi &nbsp;&nbsp;&nbsp;<span>22yrs</span> </h5>
+            <p class=""><strong>Missing since:</strong> <span>12 March 2015</span></p>
+            <p class=""><strong>Last seen:</strong> <span>98 Ademola Street, keju, Ikeja, Lagos.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <div class="card">
+          <img class="img-fluid" src="images/guy.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <button type="button" class="btn btn-danger btn-category">NEWEST</button>
+          </div>
+          <div class="card-body bg-dark">
+            <h5 class="">Adekunle Obi &nbsp;&nbsp;&nbsp;<span>22yrs</span> </h5>
+            <p class=""><strong>Missing since:</strong> <span>12 March 2015</span></p>
+            <p class=""><strong>Last seen:</strong> <span>98 Ademola Street, keju, Ikeja, Lagos.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <div class="card">
+          <img class="img-fluid" src="images/lady.jpg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <button type="button" class="btn btn-danger btn-category">NEWEST</button>
+          </div>
+          <div class="card-body bg-dark">
+            <h5 class="">Adekunle Obi &nbsp;&nbsp;&nbsp;<span>22yrs</span> </h5>
+            <p class=""><strong>Missing since:</strong> <span>12 March 2015</span></p>
+            <p class=""><strong>Last seen:</strong> <span>98 Ademola Street, keju, Ikeja, Lagos.</span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- load more button -->
+  <div class="row load-more-row">
+    <div class="col-1 col-md-4"></div>
+    <div class="col-12 col-md-4 text-center ">
+      <button type="button" class="btn btn-danger btn-lg btn-load"> Load More</button>
+    </div>
+    <div class="col-1 col-md-4"></div>  
+  </div>
+
+  <!-- options section -->
+  <div class="d-flex justify-content-around align-items-center justify-content-md-around ">
+    
+    <div class="p-2">
+      <p><strong>NEW HERE?</strong></p>
+      <img src="images/vector.png" class="img-fluid">
+      <p><strong>Who We Are</strong></p>
+    </div>
+
+    <div class="p-2">
+      <p></p>
+      <img src="images/vector2.png" class="img-fluid">
+      <p><strong>Report A Sighting</strong></p>
+    </div>
+    
+    <div class="p-2">
+      <p></p>
+      <img src="images/vector3.jpg" class="img-fluid">
+      <p><strong>Donate or Support Us</strong></p>
+    </div>
+  </div>
+
+</body>
+
+<!-- footer -->
+<footer class="">
+  <div class="row" style=" opacity: 0.8">
+    <div class="col-12 col-md-3 text-white">
+      <p class="font-weight-bold h1" style="font-size: 5em; opacity: 2">MPA</p>
+      <p>
+        The Missings Persons Project supports with the investigation and resolution of unidentified peron's case while holding an exchange of information and maintaining a national/continental database of missing person'sand unidentified records.
+      </p>
+    </div>
+
+    <div class="col-12 col-md-3 text-white d-flex justify-content-center">
+      <ul style="list-style-type: none;">
+        <li class="font-weight-bold">Quick Links</li>
+        <li>FAQs</li>
+        <li>About Us</li>
+        <li>Privacy Policy</li>
+        <li>Legal</li>
+        <li>Donate</li>
+      </ul>
+    </div>
+
+    <div class="col-12 col-md-3 text-white d-flex justify-content-center">
+      <ul style="list-style-type: none;">
+        <li class="font-weight-bold">Help</li>
+        <li>Donate</li>
+        <li>Report A Case</li>
+        <li>Spread The Word</li>
+        <li>Stay Informed</li>
+      </ul>
+    </div>
+
+    <div class="col-12 col-md-3 text-white d-flex justify-content-center">
+      <ul style="list-style-type: none;">
+        <li class="font-weight-bold">Social</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+<!--JS, Popper.js, and jQuery  -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</html>

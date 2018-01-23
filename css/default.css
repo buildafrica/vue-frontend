@@ -1,0 +1,76 @@
+nav{
+	background-color: #1961a0;
+	box-shadow: 0 0 2px 0 black;
+}
+nav, .navbar-brand, .btn-contribute{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.lead{
+	opacity: 0.6;
+}
+.form-control-nav{
+	border: 2px solid white;
+	border-radius: 30px;
+}
+.jumbotron-fluid{
+	position: ;
+	background-color: #1961a0;
+	height: 100%;
+	color: white;
+	padding-top: 8em;
+}
+
+.search-form{
+	border: 2px solid white;
+	width: 100%;
+	padding: 1em;
+	margin:auto;
+}
+.custom-select{
+	border-radius: 0;
+	border:2px solid white;
+	width: 100%;
+}
+.search-input{
+	border-radius: 0;
+	border:2px solid white;
+}
+.btn-submit{
+	width: 100%;
+	border-radius: 0;
+}
+.card-container{
+	padding: 0 3em 0em 3em;
+	margin: 5em 0 5em 0;
+}
+.card{
+	width: 100%;
+}
+.card, .btn-category, .btn-load{
+	border-radius: 0;
+}
+.btn-category{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.little-note{
+	font-size: 1.3em;
+	opacity: 0.8;
+}
+.btn-load{
+	width: 85%;
+	font-size: 1.5em;
+}
+.load-more-row{
+	width: 95%;
+	margin-bottom: 2em;
+}
+
+/*footer*/
+footer{
+	background-color: #1961a0;
+	padding: 4em;
+	margin-top: 2em;
+}
