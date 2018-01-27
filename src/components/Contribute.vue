@@ -1,12 +1,10 @@
 <template>
-  <div id="content">
-
-  </div>
+  <div id="content"></div>
 </template>
 
 <script>
 export default {
-name: 'ReportSightings'
+name: 'Contribute'
 }
 </script>
 

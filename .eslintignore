@@ -5,3 +5,4 @@ src/assets/libs/**
 test/unit/coverage/**
 test/unit/*.js
 test/e2e/*.js
+src/**/*

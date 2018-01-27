@@ -1,0 +1,125 @@
+.content-cover {
+    background-image: url('../images/african-child1.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0;
+    width: 100%;
+    display: block;
+    height: 500px;
+    padding-top: 50px;
+
+}
+.vue-toast-manager_container.__left {
+    z-index: 90 !important;
+  }
+  
+  .vue-toast_container._error .vue-toast_message {
+    background-color: #ee1e46 !important;
+    border-radius: 5px;
+    font-family: "Muli"; 
+  }
+  
+  .vue-toast_container._success .vue-toast_message {
+    background-color: #019801 !important;
+    font-family: "Muli";
+    border-radius: 5px;
+  }
+  
+  .md-whiteframe-1dp,
+  .md-whiteframe-z1 {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  }
+  
+  .btn-primary {
+      color: #fff;
+      background-color: #422696;
+      border-color: #422696;
+  }
+  
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo img, .logo h3 {
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+    color: #bbe9ef;
+  }
+
+  .header-search-holder {
+    flex: 1.5;
+    padding: 0 10px;
+    align-items: center;
+}
+.header-search {
+    height: 35px;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+    width: 90%;
+    position: relative;
+    padding: 5px 28px 5px 15px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+  .header-search-icon {
+    /* color: grey; */
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    margin-left: -25px;
+  }
+
+  .header-link-holder,.header-link-holder-2  {
+    flex: 3;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.header-link-holder-2 {
+    flex: 1;
+}
+
+  .header-link {
+    /* color: white; */
+    color: #bbe9ef;
+    width: auto;
+    display: inline-block;
+    padding: 17px 10px;
+    cursor: pointer;
+    text-decoration: none !important;
+    font-family: Muli;
+    height: 55px;
+    transition: all 200ms ease-in-out;
+  }
+
+  .header-link:hover {
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 200ms ease-in-out;
+    color: white;
+  }
+
+  .header-link.router-link-exact-active.router-link-active {
+    /* background: white; */
+    /* color: #422696; */
+    
+    color: white;
+    transition: all 200ms ease-in-out;
+  }
