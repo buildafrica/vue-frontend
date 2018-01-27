@@ -1,9 +1,7 @@
 <template>
 	<div id="dcmpa" v-cloak>
 		<BaseHeader id="header" class="md-whiteframe-z1"/>
-    <div class="content-cover">
 		<router-view></router-view>
-    </div>
     <BaseFooter/>
 	</div>
 </template>
