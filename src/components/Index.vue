@@ -103,6 +103,24 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="mpa-call-to-action-group">
+        <h3 align="center">NEW HERE?</h3>
+        <div class="col-md-4">
+          <div class="cta-item-1">
+          </div>
+          <a href="#">Who we are</a>
+        </div>
+        <div class="col-md-4">
+          <div class="cta-item-2"></div>
+          <a href="#">Report a sighting</a>
+        </div>
+        <div class="col-md-4">
+          <div class="cta-item-3"></div>
+          <a href="#">Donate or support us</a>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -251,16 +269,19 @@
     padding-top: 2px;
   }
 
-  .latest-missing, .mpa-list-guide {
+  .latest-missing,
+  .mpa-list-guide {
     height: 300px;
     width: 100%;
     position: relative;
     background: rgba(0, 0, 0, 0.2);
     margin: 0 2px;
   }
+
   .mpa-list {
     flex-wrap: wrap;
   }
+
   .mpa-list .mpa-list-guide {
     height: 300px;
     width: 250px;
@@ -320,13 +341,16 @@
   .mpa-into-continued {
     padding: 50px 0;
   }
+
   .mpa-into-continued button {
     color: white;
   }
+
   .mpa-into-continued button:hover {
     color: black !important;
     border: 1px solid black !important;
   }
+
   .mpa-intro-text {
     padding: 50px 0 100px;
     text-align: center;
@@ -343,6 +367,29 @@
     margin: 0 auto;
     position: relative;
     color: #1c1c1c;
+  }
+
+  .mpa-call-to-action-group {
+    /* bottom: 70px; */
+    display: block;
+    position: relative;
+    height: 350px;
+    /* background: red; */
+    padding: 50px 0;
+  }
+
+  .mpa-call-to-action-group .col-md-4 {
+    text-align: center !important;
+    font-size: 15px;
+    /* margin-bottom: 29px; */
+    position: relative;
+  }
+
+  .mpa-call-to-action-group .col-md-4 a {
+    margin-top: -15px;
+    display: block;
+    font-size: 16px;
+    color: black;
   }
 
 </style>
