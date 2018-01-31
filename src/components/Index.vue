@@ -1,169 +1,220 @@
 <template>
   <div id="content">
-    <div class="container-fluid heading">
-      <!-- Big header -->
-      <div class="row"></div>
+    <div class="content-cover">
+      <div class="container">
+        <div class="col-md-6">
+          <div class="intro-text">
+            <h1>
+              Help us Build a Database of Missing Persons
+            </h1>
+            <h4>Collectively, we can create a collaborative platform that will help in the investigation of missing and unidentified
+              person cases!</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-3">
+          <div class="search-filter">
+            <h4>Quick Search Form</h4>
+            <div class="radio-button-group">
+              <button class="btn btn-default">Male</button>
+              <button class="btn btn-default">Female</button>
+              <button class="btn btn-default">Unknown</button>
+            </div>
+            <br>
+            <div class="search-input-groups">
+              <input type="text" id="search-name" placeholder="Name">
+              <input type="text" id="datalist" list="states-in-nigeria" placeholder="Location">
+              <datalist id="states-in-nigeria">
+                <option value="Lagos" />
+                <option value="Abuja" />
+                <option value="Ondo" />
+                <option value="Ekiti" />
+              </datalist>
+              <button type="submit" class="btn btn-default btn-colored">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="base-row">
+        <span class="blue"></span>
+        <span class="orange"></span>
+        <span class="green"></span>
+        <span class="purple"></span>
+        <span class="tan"></span>
+      </div>
     </div>
+    <div class="latest-missing-holder">
+      <div class="latest-missing" v-for="(latestMissing, index) in latest_missing_people" :key="index" :style="'background-image: url(' + latestMissing.picture + ');'">
+        <div class="latest-missing-label">
+          NEWEST
+        </div>
+        <div class="latest-missing-bottom-info">
+          <div class="name-and-age">
+            <h4>{{latestMissing.name}}</h4>
+            <span class="age-holder">{{latestMissing.age}}</span>
+          </div>
+          <div class="latest-missing-person-location">
+            <div>Missing Since:
+              <small>{{latestMissing.missingSince}}</small>
+            </div>
+            <div>Last Seen:
+              <small>{{latestMissing.lastSeen}}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mpa-into-continued">
+      <div class="container">
+        <div class="mpa-intro-text">
+          <h1 align="center">
+            Let's Bring Them Back!
+          </h1>
+          <p>Some missing people you will have heard of, but many more you won't. For their families, life can feel like a desperate
+            and unbearable struggle as they wait for days or even years. That's why we are heare for missing persons and
+            their familie, 24 hours a day, 365 days a year, to provide free and confidential support, help us report a sighting,
+            search our database, cross check information, query the database.</p>
+        </div>
 
+        <div class="mpa-list">
+          <div class="mpa-list-guide" v-for="(latestMissing, index) in missing_people" :key="index">
+            <div class="latest-missing" :style="'background-image: url(' + latestMissing.picture + ');'">
+              <div class="latest-missing-bottom-info">
+                <div class="name-and-age">
+                  <h4>{{latestMissing.name}}</h4>
+                  <span class="age-holder">{{latestMissing.age}}</span>
+                </div>
+                <div class="latest-missing-person-location">
+                  <div>Missing Since:
+                    <small>{{latestMissing.missingSince}}</small>
+                  </div>
+                  <div>Last Seen:
+                    <small>{{latestMissing.lastSeen}}</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div align="center">
+            <br>
+            <button type="submit" class="btn btn-default btn-colored">LOAD MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
-
-      <div class="row">
-        <div class="col-lg-12">
-          <h3 class="font-weight-bold">NEWEST CASES (Last 3 days)</h3>
-          <br>
+      <div class="mpa-call-to-action-group">
+        <h3 align="center">NEW HERE?</h3>
+        <div class="col-md-4">
+          <div class="cta-item-1">
+          </div>
+          <a href="#">Who we are</a>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div :style="'background: url(' +require('@/assets/images/lady.jpg') + ');'" class="missing-person md-whiteframe-z1"></div>
+        <div class="col-md-4">
+          <div class="cta-item-2"></div>
+          <a href="#">Report a sighting</a>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div :style="'background: url(' +require('@/assets/images/guy.jpg') + ');'" class="missing-person md-whiteframe-z1"></div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div :style="'background: url(' +require('@/assets/images/lady.jpg') + ');'" class="missing-person md-whiteframe-z1"></div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div :style="'background: url(' +require('@/assets/images/guy.jpg') + ');'" class="missing-person md-whiteframe-z1"></div>
-        </div>
-        <div align="center">
-          <br>
-          <br>
-          <button type="button" class="btn btn-default btn-smaller">See More</button>
-          <hr>
+        <div class="col-md-4">
+          <div class="cta-item-3"></div>
+          <a href="#">Donate or support us</a>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-lg-12">
-          <h3 class="font-weight-bold">ARCHIVES</h3>
-        </div>
-        <hr>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div :style="'background: url(' +require('@/assets/images/lady.jpg') + ');'" class="missing-person md-whiteframe-z1"></div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div :style="'background: url(' +require('@/assets/images/guy.jpg') + ');'" class="missing-person md-whiteframe-z1"></div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div :style="'background: url(' +require('@/assets/images/lady.jpg') + ');'" class="missing-person md-whiteframe-z1"></div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div :style="'background: url(' +require('@/assets/images/guy.jpg') + ');'" class="missing-person md-whiteframe-z1"></div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div :style="'background: url(' +require('@/assets/images/lady.jpg') + ');'" class="missing-person md-whiteframe-z1"></div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div :style="'background: url(' +require('@/assets/images/guy.jpg') + ');'" class="missing-person md-whiteframe-z1"></div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div :style="'background: url(' +require('@/assets/images/lady.jpg') + ');'" class="missing-person md-whiteframe-z1"></div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-          <div :style="'background: url(' +require('@/assets/images/guy.jpg') + ');'" class="missing-person md-whiteframe-z1"></div>
-        </div>
-        <div align="center">
-          <button type="button" class="btn btn-default btn-smaller">See More</button>
-          <hr>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-
-        <div class="col-lg-12">
-          <h3 class="font-weight-bold">NEW HERE ? </h3>
-        </div>
-
-        <div class="col-lg-4">
-          <div :style="'background: url(' +require('@/assets/images/Vector.png')">
-            <p>Who We Are</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div :style="'background: url(' +require('@/assets/images/vector2.png')">
-            <p>Report A Sighting</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div :style="'background: url(' +require('@/assets/images/vector3.jpg')">
-            <p>Donate or Support Us</p>
-          </div>
-        </div>
-
-      </div>
-
     </div>
   </div>
 </template>
 
 <script>
+  import countryStates from "@/utils/geolocation";
+
   export default {
-    name: 'Index'
+    name: "Index",
+    data() {
+      return {
+        countryStates,
+        latest_missing_people: [{
+          picture: '/static/assets/images/man.jpg',
+          name: 'Adekunle Obi',
+          missingSince: 'Mar 05, 2015',
+          lastSeen: 'Adeola Odeku, Victoria Island Lagos',
+          age: '22yrs',
+        }, {
+          picture: '/static/assets/images/man.jpg',
+          name: 'Adekunle Obi',
+          missingSince: 'Mar 05, 2015',
+          lastSeen: 'Adeola Odeku, Victoria Island Lagos',
+          age: '22yrs',
+        }, {
+          picture: '/static/assets/images/man.jpg',
+          name: 'Adekunle Obi',
+          missingSince: 'Mar 05, 2015',
+          lastSeen: 'Adeola Odeku, Victoria Island Lagos',
+          age: '22yrs',
+        }, {
+          picture: '/static/assets/images/man.jpg',
+          name: 'Adekunle Obi',
+          missingSince: 'Mar 05, 2015',
+          lastSeen: 'Adeola Odeku, Victoria Island Lagos',
+          age: '22yrs',
+        }, ],
+        missing_people: [{
+            picture: '/static/assets/images/man.jpg',
+            name: 'Adekunle Obi',
+            missingSince: 'Mar 05, 2015',
+            lastSeen: 'Adeola Odeku, Victoria Island Lagos',
+            age: '22yrs',
+          }, {
+            picture: '/static/assets/images/man.jpg',
+            name: 'Adekunle Obi',
+            missingSince: 'Mar 05, 2015',
+            lastSeen: 'Adeola Odeku, Victoria Island Lagos',
+            age: '22yrs',
+          }, {
+            picture: '/static/assets/images/man.jpg',
+            name: 'Adekunle Obi',
+            missingSince: 'Mar 05, 2015',
+            lastSeen: 'Adeola Odeku, Victoria Island Lagos',
+            age: '22yrs',
+          }, {
+            picture: '/static/assets/images/man.jpg',
+            name: 'Adekunle Obi',
+            missingSince: 'Mar 05, 2015',
+            lastSeen: 'Adeola Odeku, Victoria Island Lagos',
+            age: '22yrs',
+          },
+          {
+            picture: '/static/assets/images/man.jpg',
+            name: 'Adekunle Obi',
+            missingSince: 'Mar 05, 2015',
+            lastSeen: 'Adeola Odeku, Victoria Island Lagos',
+            age: '22yrs',
+          }, {
+            picture: '/static/assets/images/man.jpg',
+            name: 'Adekunle Obi',
+            missingSince: 'Mar 05, 2015',
+            lastSeen: 'Adeola Odeku, Victoria Island Lagos',
+            age: '22yrs',
+          }, {
+            picture: '/static/assets/images/man.jpg',
+            name: 'Adekunle Obi',
+            missingSince: 'Mar 05, 2015',
+            lastSeen: 'Adeola Odeku, Victoria Island Lagos',
+            age: '22yrs',
+          }, {
+            picture: '/static/assets/images/man.jpg',
+            name: 'Adekunle Obi',
+            missingSince: 'Mar 05, 2015',
+            lastSeen: 'Adeola Odeku, Victoria Island Lagos',
+            age: '22yrs',
+          }
+        ]
+      };
+    }
   };
 
 </script>
 
 <style>
-  .heading>.row:first-child {
-    /* background: rgba(0,0,0,0.4) url(/static/images/header.f8b8cd7.png); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 400px;
-    opacity: 0.8;
-  }
 
-  .missing-person {
-    width: 200px;
-    height: 195px;
-    margin: 20px auto;
-    background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .header {
-      height: 55px;
-    }
-
-    .mobile-menu-holder {
-      flex: 5;
-      color: white;
-      text-align: right;
-      padding: 0 20px;
-    }
-    .mobile-menu-button {
-      font-size: 25px;
-      top: -5px;
-      position: relative;
-    }
-    .mobile-menu-button span {
-      font-size: 40px;
-      top: 5px;
-      position: relative;
-    }
-    .missing-person {
-      width: auto;
-      height: 155px;
-    }
-  }
-  /* 
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  .missing-person {
-    width: auto;
-	height: 155px;
-  }
-} */
 
 </style>

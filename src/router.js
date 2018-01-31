@@ -3,6 +3,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 let Home = resolve => require(["@/components/Index"], resolve);
 let Archives = resolve => require(['@/components/Archives'], resolve);
+let Contribute = resolve => require(['@/components/Contribute'], resolve);
 let Login = resolve => require(['@/components/Login'], resolve);
 let Signup = resolve => require(['@/components/Signup'], resolve);
 let ReportSightings = resolve => require(['@/components/ReportSightings'], resolve);
@@ -34,6 +35,11 @@ export default new Router({
       path: '/archives',
       name: 'archives',
       component: Archives,
+    },
+    {
+      path: '/contribute',
+      name: 'contribute',
+      component: Contribute,
     },
     {
       path: '/report-sighting',
